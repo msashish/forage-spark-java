@@ -54,7 +54,7 @@ class SparkTasks {
         System.out.println("    Input data rows: before processing: " + this.dataset.count() +
                 " and after processing: " + merchant_long_lat_split_df.count());
 
-        utilities.WriteDSToCsv(merchant_long_lat_split_df, "output/anz_synth_df.csv");
+        utilities.WriteDSToCsv(merchant_long_lat_split_df, "output/abc_synth_df.csv");
 
         System.out.println("    Processing time taken by DataFrame API =  " +
                 TimeUnit.NANOSECONDS.toSeconds(System.nanoTime() - startTime));
@@ -85,7 +85,7 @@ class SparkTasks {
         System.out.println("    Input data rows: before processing: " + rdd.count() +
                 " and after processing: " + split_rdd.count());
 
-        utilities.WriteRDDToCsv(split_rdd,"output_rdd/anz_synth_rdd.csv");
+        utilities.WriteRDDToCsv(split_rdd,"output_rdd/abc_synth_rdd.csv");
 
         System.out.println("    Processing time taken by DataFrame API =  " +
                 TimeUnit.NANOSECONDS.toSeconds(System.nanoTime() - startTime));
